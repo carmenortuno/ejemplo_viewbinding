@@ -4,7 +4,6 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.LayoutInflater
 import com.example.ejemplo_viewbinding.databinding.ActivityMainBinding
-//https://developer.android.com/topic/libraries/view-binding?hl=es-419#kotlin
 class MainActivity : AppCompatActivity() {
 
     private lateinit var binding:ActivityMainBinding
@@ -17,7 +16,7 @@ class MainActivity : AppCompatActivity() {
 
         binding.texto.text="Hola"
         binding.button.setOnClickListener {
-            binding.texto.text=binding.edit.toString()
+            binding.texto.text=binding.edit.text.toString()
         }
 
     }
